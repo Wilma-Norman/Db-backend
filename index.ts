@@ -1,12 +1,11 @@
 import express from "express";
 import mongoose from "mongoose";
+import cors from 'cors'
 import "dotenv/config";
 import { authRouter } from "./routes/auth";
 import { postRouter } from "./routes/posts";
 import { profileRouter } from "./routes/profile";
 import { commentsRouter } from "./routes/comment";
-
-import cors from "cors";
 
 const app = express();
 app.use(cors());
